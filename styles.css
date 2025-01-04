@@ -13,10 +13,11 @@ body {
     max-height: 400px;
     background-color: #ffffff;
     color: #ffffff;
-    margin: 30px auto 0px;
-    padding: 10px;
+    margin: 30px auto 0px; /* this margin is 30px for top, auto for left and right, and 0px for bottom */
+    padding: 10px; /* this padding is 10px for all sides */
 }
 
+/* This below is a multiselector for css. you select each element with a comma */
 #controls,
 #stats {
     border: 1px solid #0a0a23;
@@ -25,8 +26,14 @@ body {
 }
 
 #monsterStats {
+    display: none; /* this code hides the entire clock with the 'none' */
     border: 1px solid #0a0a23;
     padding: 5px;
     background-color: #c70d0d;
     color: #ffffff
+}
+
+/*this is for the CLASS stat */
+.stat {
+    padding-right: 10px;
 }
